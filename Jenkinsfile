@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("shakeel-j/train-schedule")
+                    app = docker.build("shakeelj/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
                     }
